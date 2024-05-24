@@ -15,7 +15,7 @@ pipeline {
                     doGenerateSubmoduleConfigurations: false,
                     extensions: [],
                     submoduleCfg: [],
-                    userRemoteConfigs: [[url: 'https://github.com/nikhilgupta221b/BlogAppSPE.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/Chittaranjan2707/SPEBlogApp.git']]
                 ])
             }
         }
@@ -39,7 +39,7 @@ pipeline {
         stage('Push Docker Images to DockerHub') {
             steps {
                 script {
-                    docker.withRegistry('https://registry.hub.docker.com', 'DockerhubCred') {
+                    docker.withRegistry('https://registry.hub.docker.com', 'DockerHubCred') {
                         docker.image("$FRONTEND_IMAGE").push('latest')
                         docker.image("$BACKEND_IMAGE").push('latest')
                     }
