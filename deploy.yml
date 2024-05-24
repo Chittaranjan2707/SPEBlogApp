@@ -3,12 +3,12 @@
   hosts: local
   become: true
   tasks:
-    - name: Install Docker if not present
-      apt:
-        name: docker.io
-        state: latest
-        update_cache: yes
-      when: ansible_os_family == "Debian"
+    # - name: Install Docker if not present
+    #   apt:
+    #     name: docker.io
+    #     state: latest
+    #     update_cache: yes
+    #   when: ansible_os_family == "Debian"
 
     # - name: Install Docker Compose if not present
     #   get_url:
