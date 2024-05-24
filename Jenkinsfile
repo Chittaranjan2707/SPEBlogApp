@@ -49,12 +49,17 @@ pipeline {
 
         stage('Deploy with Ansible') {
             steps {
-                ansiblePlaybook(
-                    playbook: 'deploy.yml',
-                    inventory: 'hosts.ini',
-                    sudo: true,
-                    sudoUser: 'root'
-                )
+                withCredentials([string(credentialsId: 'ansible_become_pass', variable: 'SUDO_PASS')]) {
+                    ansiblePlaybook(
+                        playbook: 'deploy.yml',
+                        inventory: 'hosts.ini',
+                        become: true,
+                        becomeUser: 'root',
+                        extraVars: [
+                            ansible_become_pass: SUDO_PASS
+                        ]
+                    )
+                }
             }
         }
     }
