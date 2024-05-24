@@ -51,7 +51,9 @@ pipeline {
             steps {
                 ansiblePlaybook(
                     playbook: 'deploy.yml',
-                    inventory: 'hosts.ini'
+                    inventory: 'hosts.ini',
+                    sudo: true,
+                    sudoUser: 'root'
                 )
             }
         }
