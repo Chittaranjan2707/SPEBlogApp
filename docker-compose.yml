@@ -28,7 +28,7 @@ services:
     depends_on:
       - db
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3307/BlogApp
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql-container:3307/BlogApp
       - SPRING_DATASOURCE_USERNAME=user
       - SPRING_DATASOURCE_PASSWORD=password
     restart: always
