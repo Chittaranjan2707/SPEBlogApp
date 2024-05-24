@@ -19,6 +19,17 @@ pipeline {
                 ])
             }
         }
+        stage('Docker Cleanup') {
+            steps {
+                script {
+                    // Clean up Docker containers, volumes, and networks to ensure a fresh start
+                    sh 'docker container prune -f'
+                    sh 'docker volume prune -f'
+                    sh 'docker network prune -f'
+                    sh 'docker image prune -f'
+                }
+            }
+        }
 
         stage('Build Frontend Docker Image') {
             steps {
