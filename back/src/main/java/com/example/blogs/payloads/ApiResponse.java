@@ -13,4 +13,8 @@ public class ApiResponse {
 
     private String message;
     private boolean success;
+
+    public boolean getSuccess() {
+        return success;
+    }
 }
