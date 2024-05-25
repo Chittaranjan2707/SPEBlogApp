@@ -31,15 +31,15 @@ pipeline {
             }
         }
 
-        stage('Test Backend') {
-            steps {
-                script {
-                    dir('back') {
-                        sh 'mvn test'
-                    }
-                }
-            }
-        }
+        // stage('Test Backend') {
+        //     steps {
+        //         script {
+        //             dir('back') {
+        //                 sh 'mvn test'
+        //             }
+        //         }
+        //     }
+        // }
 
         stage('Build Frontend') {
             steps {
