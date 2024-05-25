@@ -81,16 +81,6 @@ services:
     networks:
       - blog-network
 
-  filebeat:
-    image: docker.elastic.co/beats/filebeat:7.10.1
-    volumes:
-      - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
-      - /var/lib/docker/containers:/var/lib/docker/containers:ro
-    depends_on:
-      - logstash
-    networks:
-      - blog-network
-
 networks:
   blog-network:
     driver: bridge
