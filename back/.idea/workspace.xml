@@ -1,6 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3715ffc5-cb96-4f0b-accc-64744893f600" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blogs/Contollers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/blogs/Contollers/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blogs/services/implementations/PostImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/blogs/services/implementations/PostImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blogs-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blogs-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/Contollers/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/Contollers/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/Contollers/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/Contollers/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/Contollers/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/Contollers/CommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/Contollers/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/Contollers/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/Contollers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/Contollers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/exceptions/ApiException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/exceptions/ApiException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/exceptions/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/exceptions/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/exceptions/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/exceptions/ResourceNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/payloads/ApiResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/payloads/ApiResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/payloads/PostDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/payloads/PostDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/security/CustomUserDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/security/CustomUserDetailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/security/JwtAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/security/JwtAuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/security/JwtTokenHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/security/JwtTokenHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/services/implementations/CategoryImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/services/implementations/CategoryImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/services/implementations/CommentImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/services/implementations/CommentImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/services/implementations/FileImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/services/implementations/FileImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/services/implementations/PostImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/services/implementations/PostImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/blogs/services/implementations/UserImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/blogs/services/implementations/UserImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.blogs.BlogsApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.blogs.BlogsApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.blogs.BlogsApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.blogs.BlogsApplicationTests.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2gxSzLFifth0UXWOjKkHj0H10Ep" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/chittaranjan-chandwani/Desktop/BlogAppSPE-main/BlogAppSPE-main/back",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="back" />
@@ -23,5 +100,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3715ffc5-cb96-4f0b-accc-64744893f600" name="Changes" comment="" />
+      <created>1716637997685</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716637997685</updated>
+      <workItem from="1716637998521" duration="638000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

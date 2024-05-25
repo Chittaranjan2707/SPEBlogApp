@@ -40,7 +40,7 @@ public class PostController {
     public ResponseEntity<PostDto> createPost(@RequestBody PostDto postDto, @PathVariable Integer userId, @PathVariable Integer categoryId) {
         logger.info("Creating new post for user ID: {} and category ID: {}", userId, categoryId);
         PostDto createPost = this.postService.createPost(postDto, userId, categoryId);
-        logger.info("Post created successfully with ID: {}", createPost.getId());
+        logger.info("Post created successfully with ID: {}", createPost.getPostId());
         return new ResponseEntity<>(createPost, HttpStatus.CREATED);
     }
 
@@ -76,7 +76,7 @@ public class PostController {
     public ResponseEntity<PostDto> getPostById(@PathVariable Integer postId) {
         logger.info("Fetching post with ID: {}", postId);
         PostDto postDto = this.postService.getPostById(postId);
-        logger.info("Post fetched successfully with ID: {}", postDto.getId());
+        logger.info("Post fetched successfully with ID: {}", postDto.getPostId());
         return new ResponseEntity<>(postDto, HttpStatus.OK);
     }
 
@@ -92,7 +92,7 @@ public class PostController {
     public ResponseEntity<PostDto> updatePost(@RequestBody PostDto postDto, @PathVariable Integer postId) {
         logger.info("Updating post with ID: {}", postId);
         PostDto updatedPost = this.postService.updatePost(postDto, postId);
-        logger.info("Post updated successfully with ID: {}", updatedPost.getId());
+        logger.info("Post updated successfully with ID: {}", updatedPost.getPostId());
         return new ResponseEntity<>(updatedPost, HttpStatus.OK);
     }
 

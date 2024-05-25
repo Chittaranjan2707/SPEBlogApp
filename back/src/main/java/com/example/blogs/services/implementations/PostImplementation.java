@@ -57,7 +57,7 @@ public class PostImplementation implements PostService {
         Post newPost = this.postRepo.save(post);
         PostDto responseDto = this.modelMapper.map(newPost, PostDto.class);
         responseDto.setAddDate(newPost.getAddDate());
-        logger.info("Post created successfully with ID: {}", newPost.getId());
+        logger.info("Post created successfully with ID: {}", newPost.getPostId());
         return responseDto;
     }
 
@@ -75,7 +75,7 @@ public class PostImplementation implements PostService {
         post.setCategory(category);
 
         Post updatedPost = this.postRepo.save(post);
-        logger.info("Post updated successfully with ID: {}", updatedPost.getId());
+        logger.info("Post updated successfully with ID: {}", updatedPost.getPostId());
         return this.modelMapper.map(updatedPost, PostDto.class);
     }
 
@@ -115,7 +115,7 @@ public class PostImplementation implements PostService {
         logger.info("Fetching post with ID: {}", postId);
         Post post = this.postRepo.findById(postId)
                 .orElseThrow(() -> new ResourceNotFoundException("Post", "Post Id", postId));
-        logger.info("Post fetched successfully with ID: {}", post.getId());
+        logger.info("Post fetched successfully with ID: {}", post.getPostId());
         return this.modelMapper.map(post, PostDto.class);
     }
 
