@@ -28,6 +28,7 @@ services:
     depends_on:
       - db
     environment:
+      - ELASTICSEARCH_HOST=http://elasticsearch:9200
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql-container:3306/BlogApp
       - SPRING_DATASOURCE_USERNAME=user
       - SPRING_DATASOURCE_PASSWORD=password
@@ -61,7 +62,8 @@ services:
       - blog-network
 
   logstash:
-    image: docker.elastic.co/logstash/logstash:7.10.0
+    image: docker.elastic.co/logstash/logstash:7.10.1
+    container_name: logstash
     ports:
       - "5000:5000"
     volumes:
