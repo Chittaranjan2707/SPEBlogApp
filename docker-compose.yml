@@ -27,6 +27,7 @@ services:
       - "9090:9090"
     depends_on:
       - db
+      - logstash
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql-container:3306/BlogApp
       - SPRING_DATASOURCE_USERNAME=user
@@ -47,9 +48,44 @@ services:
     networks:
       - blog-network
 
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    networks:
+      - blog-network
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.10.0
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./logstash:/usr/share/logstash/pipeline
+    depends_on:
+      - elasticsearch
+    networks:
+      - blog-network
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.10.0
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      - blog-network
+
 networks:
   blog-network:
     driver: bridge
+
 volumes:
   db-data:
+    driver: local
+  elasticsearch-data:
     driver: local
