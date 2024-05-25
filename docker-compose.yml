@@ -61,12 +61,11 @@ services:
       - blog-network
 
   logstash:
-    image: docker.elastic.co/logstash/logstash:7.10.1
-    container_name: logstash
-    volumes:
-      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro
+    image: docker.elastic.co/logstash/logstash:7.10.0
     ports:
       - "5000:5000"
+    volumes:
+      - ./logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
     depends_on:
       - elasticsearch
     networks:
