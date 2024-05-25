@@ -27,7 +27,6 @@ services:
       - "9090:9090"
     depends_on:
       - db
-      - logstash
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql-container:3306/BlogApp
       - SPRING_DATASOURCE_USERNAME=user
