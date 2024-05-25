@@ -31,6 +31,37 @@ pipeline {
             }
         }
 
+        stage('Build Backend') {
+            steps {
+                script {
+                    dir('back') {
+                        sh 'mvn clean package'
+                    }
+                }
+            }
+        }
+
+        stage('Test Backend') {
+            steps {
+                script {
+                    dir('back') {
+                        sh 'mvn test'
+                    }
+                }
+            }
+        }
+
+        stage('Build Frontend') {
+            steps {
+                script {
+                    dir('front') {
+                        sh 'npm install'
+                        sh 'npm run build'
+                    }
+                }
+            }
+        }
+
         stage('Build Frontend Docker Image') {
             steps {
                 script {
