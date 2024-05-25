@@ -31,16 +31,6 @@ pipeline {
             }
         }
 
-        stage('Build Backend') {
-            steps {
-                script {
-                    dir('back') {
-                        sh 'mvn clean package'
-                    }
-                }
-            }
-        }
-
         stage('Test Backend') {
             steps {
                 script {
