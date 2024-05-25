@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN">
+<Configuration status="warn">
     <Appenders>
-        <!-- Console Appender -->
-        <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
-        </Console>
-
-        <!-- File Appender -->
-        <File name="File" fileName="logs/app.log">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
-        </File>
-
-        <!-- Socket Appender for Logstash -->
-        <Socket name="Logstash" host="logstash" port="5000">
-            <JsonLayout properties="true"/>
-        </Socket>
+        <Elasticsearch name="Elasticsearch">
+            <IndexName>log-index</IndexName>
+            <IndexTemplate>
+                {"template": "log-*"}
+            </IndexTemplate>
+            <ConnectionUrl>https://0bd42bcd73a847d2a4a0027009323fe1.us-central1.gcp.cloud.es.io</ConnectionUrl>
+            <UserName>elastic</UserName>
+            <Password>yM1rFEPH0TMiGfs4YmwYldNN</Password>
+            <BatchDelivery>
+                <ProjectId>YourProjectId</ProjectId>
+                <BatchSize>1000</BatchSize>
+                <BatchDelay>10</BatchDelay>
+            </BatchDelivery>
+        </Elasticsearch>
     </Appenders>
-
     <Loggers>
-        <!-- Root Logger -->
         <Root level="info">
-            <AppenderRef ref="Console"/>
-            <AppenderRef ref="File"/>
-            <AppenderRef ref="Logstash"/>
+            <AppenderRef ref="Elasticsearch"/>
         </Root>
     </Loggers>
 </Configuration>
